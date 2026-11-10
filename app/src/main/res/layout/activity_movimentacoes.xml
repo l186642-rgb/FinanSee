@@ -2,7 +2,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3F6F5">
+    android:background="@color/fundo_lavanda">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,8 +16,18 @@
             android:text="Nova movimentação"
             android:textSize="26sp"
             android:textStyle="bold"
-            android:textColor="#234F3B"
+            android:textColor="@color/pink_barbie"
             android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/txtSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saldo atual: R$ 0,00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/pink_barbie"
+            android:layout_marginBottom="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,7 +42,10 @@
             android:layout_height="wrap_content"
             android:hint="Ex.: Compra no mercado"
             android:inputType="textCapSentences"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rosa_bebe"
+            android:textColor="@color/roxo_escuro"
+            android:textColorHint="@color/lilas"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,13 +80,17 @@
                 android:id="@+id/rbReceita"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Receita"/>
+                android:text="Receita"
+                android:textColor="@color/roxo_escuro"
+                android:buttonTint="@color/pink_barbie"/>
 
             <RadioButton
                 android:id="@+id/rbDespesa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Despesa"/>
+                android:text="Despesa"
+                android:textColor="@color/roxo_escuro"
+                android:buttonTint="@color/pink_barbie"/>
 
         </RadioGroup>
 
@@ -88,14 +105,17 @@
             android:id="@+id/spCategoria"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/lilas"
+            android:popupBackground="@color/rosa_bebe"/>
 
         <Button
             android:id="@+id/btnSalvar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Salvar movimentação"
-            android:backgroundTint="#234F3B"/>
+            android:backgroundTint="@color/pink_barbie"
+            android:textColor="@color/branco"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -112,9 +132,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nenhuma movimentação cadastrada."
-            android:textColor="#777777"
-            android:gravity="center"
-            android:padding="16dp"/>
+            android:textColor="@color/roxo_escuro"
+            android:background="@color/rosa_bebe"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:gravity="center"/>
 
     </LinearLayout>
 

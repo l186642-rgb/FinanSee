@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="24dp"
-    android:background="#F3F6F5">
+    android:background="@color/fundo_lavanda">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,14 +14,14 @@
         android:text="FinanSee"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:textColor="#234F3B"/>
+        android:textColor="@color/roxo_escuro"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seu dinheiro, seu controle."
         android:textSize="16sp"
-        android:textColor="#666666"
+        android:textColor="@color/pink_barbie"
         android:layout_marginTop="8dp"/>
 
     <TextView
@@ -48,13 +48,17 @@
         android:layout_width="353dp"
         android:layout_height="49dp"
         android:layout_marginTop="45dp"
-        android:text="Minhas movimentações" />
+        android:text="Minhas movimentações"
+        android:backgroundTint="@color/lilas"
+        android:textColor="@color/branco"/>
 
     <Button
         android:id="@+id/btnEducacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Educação financeira"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/lilas"
+        android:textColor="@color/branco"/>
 
 </LinearLayout>

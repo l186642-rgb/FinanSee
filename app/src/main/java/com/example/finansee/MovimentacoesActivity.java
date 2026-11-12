@@ -23,6 +23,7 @@ import android.widget.ArrayAdapter;
 public class MovimentacoesActivity extends AppCompatActivity {
     private BancoDados bancoDados;
     private ArrayList<String> movimentacoes = new ArrayList<>();
+    // Lista dinâmica que armazena textos
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +66,7 @@ public class MovimentacoesActivity extends AppCompatActivity {
                 "Salário",
                 "Outros"
         };
-
+        // Conecta a lista de categorias ao Spinner
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_spinner_item,
